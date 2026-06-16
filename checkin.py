@@ -596,6 +596,8 @@ async def main():
 				account_result = format_check_in_notification(detail)
 				if not any(account_name in item for item in notification_content):
 					notification_content.append(account_result)
+	else:
+		notification_content.append('balance not changed')
 
 	if current_balance_hash:
 		save_balance_hash(current_balance_hash)

@@ -510,7 +510,7 @@ async def main():
 	notification_content = []
 	current_balances = {}
 	account_check_in_details = {}
-	need_notify = False
+	need_notify = True
 	balance_changed = False
 
 	for i, account in enumerate(accounts):

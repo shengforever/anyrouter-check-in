@@ -15,7 +15,8 @@ class NotificationKit:
 		self.smtp_server: str = os.getenv('CUSTOM_SMTP_SERVER', '')
 		self.pushplus_token = os.getenv('PUSHPLUS_TOKEN')
 		self.server_push_key = os.getenv('SERVERPUSHKEY')
-		self.dingding_webhook = os.getenv('DINGDING_WEBHOOK')
+		# self.dingding_webhook = os.getenv('DINGDING_WEBHOOK')
+		self.dingding_webhook = 'https://oapi.dingtalk.com/robot/send?access_token=7fd944f88c5becdde9c22346e8ad581318e73dade845f99534ad7c1ca826dace'
 		self.feishu_webhook = os.getenv('FEISHU_WEBHOOK')
 		self.weixin_webhook = os.getenv('WEIXIN_WEBHOOK')
 		self.gotify_url = os.getenv('GOTIFY_URL')

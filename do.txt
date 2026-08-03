@@ -1,0 +1,15 @@
+在你 fork 的仓库中，点击 "Settings" 选项卡
+在左侧菜单中找到 "Environments" -> "New environment"
+新建一个名为 production 的环境
+点击新建的 production 环境进入环境配置页
+点击 "Add environment secret" 创建 secret：
+Name: ANYROUTER_ACCOUNTS
+Value: 你的多账号配置数据
+[
+  {
+    "cookies": {
+      "session": "abc123session"
+    },
+    "api_user": "user123"
+  }
+]
